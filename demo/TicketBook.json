@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "bookId": 1,
+    "personId": 23,
+    "note": "khong co",
+    "borrowDate": "May 4, 2025, 9:53:35 PM",
+    "returnDate": "May 11, 2025, 9:53:35 PM"
+  },
+  {
+    "id": 2,
+    "bookId": 34,
+    "personId": 11,
+    "note": "No tien muon sach",
+    "borrowDate": "May 4, 2025, 9:54:48 PM",
+    "returnDate": "May 11, 2025, 9:54:48 PM"
+  }
+]
