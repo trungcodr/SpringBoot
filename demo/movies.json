@@ -1,1002 +1,1032 @@
 [
-    {
-        "id": 1,
-        "name": "Movie 1",
-        "genre": "Horror",
-        "director": "John Doe",
-        "duration": 102,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2022-04-11",
-        "category": "18+"
-    },
-    {
-        "id": 2,
-        "name": "Movie 2",
-        "genre": "Romance",
-        "director": "Jane Smith",
-        "duration": 163,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2012-03-02",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 3,
-        "name": "Movie 3",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 115,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2013-05-03",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 4,
-        "name": "Movie 4",
-        "genre": "Romance",
-        "director": "John Doe",
-        "duration": 166,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2020-03-13",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 5,
-        "name": "Movie 5",
-        "genre": "Comedy",
-        "director": "Alice Brown",
-        "duration": 98,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2020-06-06",
-        "category": "18+"
-    },
-    {
-        "id": 6,
-        "name": "Movie 6",
-        "genre": "Horror",
-        "director": "Emily Clark",
-        "duration": 166,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2007-12-20",
-        "category": "16+"
-    },
-    {
-        "id": 7,
-        "name": "Movie 7",
-        "genre": "Fantasy",
-        "director": "David White",
-        "duration": 148,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2014-06-10",
-        "category": "16+"
-    },
-    {
-        "id": 8,
-        "name": "Movie 8",
-        "genre": "Action",
-        "director": "John Doe",
-        "duration": 147,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2017-04-22",
-        "category": "18+"
-    },
-    {
-        "id": 9,
-        "name": "Movie 9",
-        "genre": "Comedy",
-        "director": "John Doe",
-        "duration": 114,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2020-11-04",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 10,
-        "name": "Movie 10",
-        "genre": "Horror",
-        "director": "Michael Johnson",
-        "duration": 68,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2017-04-23",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 11,
-        "name": "Movie 11",
-        "genre": "Action",
-        "director": "David White",
-        "duration": 115,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2025-03-17",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 12,
-        "name": "Movie 12",
-        "genre": "Horror",
-        "director": "John Doe",
-        "duration": 145,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2013-10-05",
-        "category": "18+"
-    },
-    {
-        "id": 13,
-        "name": "Movie 13",
-        "genre": "Drama",
-        "director": "Emily Clark",
-        "duration": 133,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2013-05-13",
-        "category": "16+"
-    },
-    {
-        "id": 14,
-        "name": "Movie 14",
-        "genre": "Action",
-        "director": "Alice Brown",
-        "duration": 120,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2013-07-09",
-        "category": "18+"
-    },
-    {
-        "id": 15,
-        "name": "Movie 15",
-        "genre": "Action",
-        "director": "John Doe",
-        "duration": 62,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2018-10-06",
-        "category": "18+"
-    },
-    {
-        "id": 16,
-        "name": "Movie 16",
-        "genre": "Fantasy",
-        "director": "Alice Brown",
-        "duration": 87,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2021-08-06",
-        "category": "16+"
-    },
-    {
-        "id": 17,
-        "name": "Movie 17",
-        "genre": "Fantasy",
-        "director": "John Doe",
-        "duration": 82,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2008-10-17",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 18,
-        "name": "Movie 18",
-        "genre": "Comedy",
-        "director": "David White",
-        "duration": 130,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2006-02-03",
-        "category": "16+"
-    },
-    {
-        "id": 19,
-        "name": "Movie 19",
-        "genre": "Adventure",
-        "director": "Alice Brown",
-        "duration": 132,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2015-10-02",
-        "category": "18+"
-    },
-    {
-        "id": 20,
-        "name": "Movie 20",
-        "genre": "Drama",
-        "director": "Emily Clark",
-        "duration": 139,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2025-02-27",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 21,
-        "name": "Movie 21",
-        "genre": "Drama",
-        "director": "Emily Clark",
-        "duration": 84,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2008-04-19",
-        "category": "16+"
-    },
-    {
-        "id": 22,
-        "name": "Movie 22",
-        "genre": "Action",
-        "director": "Emily Clark",
-        "duration": 111,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2022-07-08",
-        "category": "16+"
-    },
-    {
-        "id": 23,
-        "name": "Movie 23",
-        "genre": "Romance",
-        "director": "Michael Johnson",
-        "duration": 82,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2024-06-03",
-        "category": "16+"
-    },
-    {
-        "id": 24,
-        "name": "Movie 24",
-        "genre": "Horror",
-        "director": "Michael Johnson",
-        "duration": 174,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2009-01-31",
-        "category": "18+"
-    },
-    {
-        "id": 25,
-        "name": "Movie 25",
-        "genre": "Drama",
-        "director": "David White",
-        "duration": 128,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2023-07-03",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 26,
-        "name": "Movie 26",
-        "genre": "Comedy",
-        "director": "Alice Brown",
-        "duration": 104,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2024-07-11",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 27,
-        "name": "Movie 27",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 65,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2010-09-12",
-        "category": "16+"
-    },
-    {
-        "id": 28,
-        "name": "Movie 28",
-        "genre": "Romance",
-        "director": "Michael Johnson",
-        "duration": 87,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2016-12-24",
-        "category": "18+"
-    },
-    {
-        "id": 29,
-        "name": "Movie 29",
-        "genre": "Fantasy",
-        "director": "Michael Johnson",
-        "duration": 163,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2010-06-19",
-        "category": "16+"
-    },
-    {
-        "id": 30,
-        "name": "Movie 30",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 68,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2016-03-02",
-        "category": "18+"
-    },
-    {
-        "id": 31,
-        "name": "Movie 31",
-        "genre": "Adventure",
-        "director": "Alice Brown",
-        "duration": 112,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2012-10-04",
-        "category": "16+"
-    },
-    {
-        "id": 32,
-        "name": "Movie 32",
-        "genre": "Comedy",
-        "director": "Emily Clark",
-        "duration": 148,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2022-09-11",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 33,
-        "name": "Movie 33",
-        "genre": "Horror",
-        "director": "Jane Smith",
-        "duration": 130,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2017-06-15",
-        "category": "16+"
-    },
-    {
-        "id": 34,
-        "name": "Movie 34",
-        "genre": "Action",
-        "director": "Alice Brown",
-        "duration": 79,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2017-12-12",
-        "category": "16+"
-    },
-    {
-        "id": 35,
-        "name": "Movie 35",
-        "genre": "Horror",
-        "director": "Alice Brown",
-        "duration": 90,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2023-02-10",
-        "category": "18+"
-    },
-    {
-        "id": 36,
-        "name": "Movie 36",
-        "genre": "Drama",
-        "director": "Alice Brown",
-        "duration": 171,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2025-03-31",
-        "category": "18+"
-    },
-    {
-        "id": 37,
-        "name": "Movie 37",
-        "genre": "Fantasy",
-        "director": "David White",
-        "duration": 170,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2018-04-03",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 38,
-        "name": "Movie 38",
-        "genre": "Horror",
-        "director": "Alice Brown",
-        "duration": 109,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2008-11-23",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 39,
-        "name": "Movie 39",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 95,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2014-11-24",
-        "category": "16+"
-    },
-    {
-        "id": 40,
-        "name": "Movie 40",
-        "genre": "Sci-Fi",
-        "director": "Michael Johnson",
-        "duration": 61,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2011-10-15",
-        "category": "18+"
-    },
-    {
-        "id": 41,
-        "name": "Movie 41",
-        "genre": "Action",
-        "director": "Emily Clark",
-        "duration": 157,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2006-03-17",
-        "category": "16+"
-    },
-    {
-        "id": 42,
-        "name": "Movie 42",
-        "genre": "Romance",
-        "director": "John Doe",
-        "duration": 149,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2021-01-21",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 43,
-        "name": "Movie 43",
-        "genre": "Adventure",
-        "director": "Michael Johnson",
-        "duration": 153,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2011-06-18",
-        "category": "18+"
-    },
-    {
-        "id": 44,
-        "name": "Movie 44",
-        "genre": "Horror",
-        "director": "Alice Brown",
-        "duration": 160,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2010-05-06",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 45,
-        "name": "Movie 45",
-        "genre": "Fantasy",
-        "director": "Michael Johnson",
-        "duration": 69,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2014-03-14",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 46,
-        "name": "Movie 46",
-        "genre": "Action",
-        "director": "Alice Brown",
-        "duration": 127,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2011-02-23",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 47,
-        "name": "Movie 47",
-        "genre": "Action",
-        "director": "David White",
-        "duration": 114,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2011-09-28",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 48,
-        "name": "Movie 48",
-        "genre": "Adventure",
-        "director": "Emily Clark",
-        "duration": 107,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2011-09-03",
-        "category": "16+"
-    },
-    {
-        "id": 49,
-        "name": "Movie 49",
-        "genre": "Fantasy",
-        "director": "David White",
-        "duration": 145,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2017-07-17",
-        "category": "16+"
-    },
-    {
-        "id": 50,
-        "name": "Movie 50",
-        "genre": "Fantasy",
-        "director": "David White",
-        "duration": 120,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2024-10-01",
-        "category": "18+"
-    },
-    {
-        "id": 51,
-        "name": "Movie 51",
-        "genre": "Adventure",
-        "director": "John Doe",
-        "duration": 119,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2006-02-25",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 52,
-        "name": "Movie 52",
-        "genre": "Horror",
-        "director": "Alice Brown",
-        "duration": 153,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2022-01-19",
-        "category": "16+"
-    },
-    {
-        "id": 53,
-        "name": "Movie 53",
-        "genre": "Sci-Fi",
-        "director": "David White",
-        "duration": 127,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2023-05-29",
-        "category": "18+"
-    },
-    {
-        "id": 54,
-        "name": "Movie 54",
-        "genre": "Horror",
-        "director": "Emily Clark",
-        "duration": 166,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2021-10-06",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 55,
-        "name": "Movie 55",
-        "genre": "Action",
-        "director": "Emily Clark",
-        "duration": 61,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2020-03-24",
-        "category": "16+"
-    },
-    {
-        "id": 56,
-        "name": "Movie 56",
-        "genre": "Action",
-        "director": "Emily Clark",
-        "duration": 140,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2008-01-23",
-        "category": "18+"
-    },
-    {
-        "id": 57,
-        "name": "Movie 57",
-        "genre": "Romance",
-        "director": "Jane Smith",
-        "duration": 93,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2019-12-07",
-        "category": "16+"
-    },
-    {
-        "id": 58,
-        "name": "Movie 58",
-        "genre": "Fantasy",
-        "director": "Michael Johnson",
-        "duration": 151,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2005-06-23",
-        "category": "18+"
-    },
-    {
-        "id": 59,
-        "name": "Movie 59",
-        "genre": "Adventure",
-        "director": "Michael Johnson",
-        "duration": 105,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2008-01-01",
-        "category": "18+"
-    },
-    {
-        "id": 60,
-        "name": "Movie 60",
-        "genre": "Sci-Fi",
-        "director": "John Doe",
-        "duration": 91,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2021-05-18",
-        "category": "18+"
-    },
-    {
-        "id": 61,
-        "name": "Movie 61",
-        "genre": "Comedy",
-        "director": "Emily Clark",
-        "duration": 139,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2005-10-09",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 62,
-        "name": "Movie 62",
-        "genre": "Drama",
-        "director": "Michael Johnson",
-        "duration": 70,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2023-06-28",
-        "category": "18+"
-    },
-    {
-        "id": 63,
-        "name": "Movie 63",
-        "genre": "Action",
-        "director": "Michael Johnson",
-        "duration": 76,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2024-03-02",
-        "category": "16+"
-    },
-    {
-        "id": 64,
-        "name": "Movie 64",
-        "genre": "Romance",
-        "director": "David White",
-        "duration": 161,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2015-10-07",
-        "category": "16+"
-    },
-    {
-        "id": 65,
-        "name": "Movie 65",
-        "genre": "Adventure",
-        "director": "John Doe",
-        "duration": 179,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2011-05-16",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 66,
-        "name": "Movie 66",
-        "genre": "Action",
-        "director": "John Doe",
-        "duration": 93,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2014-12-19",
-        "category": "16+"
-    },
-    {
-        "id": 67,
-        "name": "Movie 67",
-        "genre": "Romance",
-        "director": "Michael Johnson",
-        "duration": 84,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2013-01-25",
-        "category": "16+"
-    },
-    {
-        "id": 68,
-        "name": "Movie 68",
-        "genre": "Sci-Fi",
-        "director": "Emily Clark",
-        "duration": 108,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2005-09-26",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 69,
-        "name": "Movie 69",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 136,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2020-11-28",
-        "category": "18+"
-    },
-    {
-        "id": 70,
-        "name": "Movie 70",
-        "genre": "Romance",
-        "director": "David White",
-        "duration": 73,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2007-08-25",
-        "category": "18+"
-    },
-    {
-        "id": 71,
-        "name": "Movie 71",
-        "genre": "Action",
-        "director": "John Doe",
-        "duration": 163,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2007-03-23",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 72,
-        "name": "Movie 72",
-        "genre": "Horror",
-        "director": "Alice Brown",
-        "duration": 169,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2009-01-30",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 73,
-        "name": "Movie 73",
-        "genre": "Adventure",
-        "director": "Michael Johnson",
-        "duration": 84,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2012-11-15",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 74,
-        "name": "Movie 74",
-        "genre": "Romance",
-        "director": "John Doe",
-        "duration": 138,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2009-05-18",
-        "category": "16+"
-    },
-    {
-        "id": 75,
-        "name": "Movie 75",
-        "genre": "Adventure",
-        "director": "Michael Johnson",
-        "duration": 145,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2012-01-02",
-        "category": "18+"
-    },
-    {
-        "id": 76,
-        "name": "Movie 76",
-        "genre": "Horror",
-        "director": "Michael Johnson",
-        "duration": 161,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2012-06-12",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 77,
-        "name": "Movie 77",
-        "genre": "Adventure",
-        "director": "Jane Smith",
-        "duration": 151,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2023-10-23",
-        "category": "18+"
-    },
-    {
-        "id": 78,
-        "name": "Movie 78",
-        "genre": "Horror",
-        "director": "Jane Smith",
-        "duration": 179,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2016-07-11",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 79,
-        "name": "Movie 79",
-        "genre": "Horror",
-        "director": "Alice Brown",
-        "duration": 142,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2009-12-30",
-        "category": "16+"
-    },
-    {
-        "id": 80,
-        "name": "Movie 80",
-        "genre": "Romance",
-        "director": "John Doe",
-        "duration": 135,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2012-05-14",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 81,
-        "name": "Movie 81",
-        "genre": "Sci-Fi",
-        "director": "Emily Clark",
-        "duration": 167,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2016-05-05",
-        "category": "16+"
-    },
-    {
-        "id": 82,
-        "name": "Movie 82",
-        "genre": "Romance",
-        "director": "Alice Brown",
-        "duration": 166,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2020-05-29",
-        "category": "16+"
-    },
-    {
-        "id": 83,
-        "name": "Movie 83",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 79,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2018-10-01",
-        "category": "18+"
-    },
-    {
-        "id": 84,
-        "name": "Movie 84",
-        "genre": "Comedy",
-        "director": "Michael Johnson",
-        "duration": 94,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2010-09-27",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 85,
-        "name": "Movie 85",
-        "genre": "Horror",
-        "director": "John Doe",
-        "duration": 85,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2009-07-23",
-        "category": "16+"
-    },
-    {
-        "id": 86,
-        "name": "Movie 86",
-        "genre": "Sci-Fi",
-        "director": "Michael Johnson",
-        "duration": 123,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2012-10-12",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 87,
-        "name": "Movie 87",
-        "genre": "Adventure",
-        "director": "Michael Johnson",
-        "duration": 126,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2015-12-12",
-        "category": "18+"
-    },
-    {
-        "id": 88,
-        "name": "Movie 88",
-        "genre": "Comedy",
-        "director": "Alice Brown",
-        "duration": 78,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2014-01-16",
-        "category": "18+"
-    },
-    {
-        "id": 89,
-        "name": "Movie 89",
-        "genre": "Comedy",
-        "director": "Emily Clark",
-        "duration": 135,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2007-12-06",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 90,
-        "name": "Movie 90",
-        "genre": "Adventure",
-        "director": "David White",
-        "duration": 128,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2017-11-04",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 91,
-        "name": "Movie 91",
-        "genre": "Fantasy",
-        "director": "David White",
-        "duration": 71,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2006-07-30",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 92,
-        "name": "Movie 92",
-        "genre": "Action",
-        "director": "Jane Smith",
-        "duration": 93,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2016-09-09",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 93,
-        "name": "Movie 93",
-        "genre": "Action",
-        "director": "Jane Smith",
-        "duration": 77,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2009-03-05",
-        "category": "18+"
-    },
-    {
-        "id": 94,
-        "name": "Movie 94",
-        "genre": "Fantasy",
-        "director": "Emily Clark",
-        "duration": 170,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2013-08-30",
-        "category": "16+"
-    },
-    {
-        "id": 95,
-        "name": "Movie 95",
-        "genre": "Action",
-        "director": "Alice Brown",
-        "duration": 77,
-        "description": "A gripping thriller that will keep you on the edge of your seat.",
-        "publishedDate": "2019-11-14",
-        "category": "16+"
-    },
-    {
-        "id": 96,
-        "name": "Movie 96",
-        "genre": "Romance",
-        "director": "Emily Clark",
-        "duration": 118,
-        "description": "An epic tale of adventure and courage.",
-        "publishedDate": "2017-06-03",
-        "category": "thi\u1ebfu nhi"
-    },
-    {
-        "id": 97,
-        "name": "Movie 97",
-        "genre": "Fantasy",
-        "director": "John Doe",
-        "duration": 107,
-        "description": "A heartwarming story of love and redemption.",
-        "publishedDate": "2007-12-22",
-        "category": "16+"
-    },
-    {
-        "id": 98,
-        "name": "Movie 98",
-        "genre": "Action",
-        "director": "Michael Johnson",
-        "duration": 106,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2015-10-07",
-        "category": "16+"
-    },
-    {
-        "id": 99,
-        "name": "Movie 99",
-        "genre": "Drama",
-        "director": "Michael Johnson",
-        "duration": 105,
-        "description": "An exploration of human nature and the will to survive.",
-        "publishedDate": "2019-01-19",
-        "category": "18+"
-    },
-    {
-        "id": 100,
-        "name": "Movie 100",
-        "genre": "Horror",
-        "director": "Emily Clark",
-        "duration": 176,
-        "description": "A whimsical journey through a world of magic and mystery.",
-        "publishedDate": "2014-06-04",
-        "category": "thi\u1ebfu nhi"
-    }
+  {
+    "id": 1,
+    "name": "Movie 1",
+    "genre": "Action",
+    "director": "Jane Smith",
+    "duration": 174,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2014-10-17",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 2,
+    "name": "Movie 2",
+    "genre": "Comedy",
+    "director": "John Doe",
+    "duration": 61,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2020-01-26",
+    "category": "16+"
+  },
+  {
+    "id": 3,
+    "name": "Movie 3",
+    "genre": "Romance",
+    "director": "David White",
+    "duration": 127,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2012-08-12",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 4,
+    "name": "Movie 4",
+    "genre": "Drama",
+    "director": "Michael Johnson",
+    "duration": 178,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2017-12-26",
+    "category": "16+"
+  },
+  {
+    "id": 5,
+    "name": "Movie 5",
+    "genre": "Adventure",
+    "director": "Jane Smith",
+    "duration": 143,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2024-01-23",
+    "category": "18+"
+  },
+  {
+    "id": 6,
+    "name": "Movie 6",
+    "genre": "Comedy",
+    "director": "Michael Johnson",
+    "duration": 74,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2020-06-22",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 7,
+    "name": "Movie 7",
+    "genre": "Adventure",
+    "director": "John Doe",
+    "duration": 110,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2012-04-10",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 8,
+    "name": "Movie 8",
+    "genre": "Fantasy",
+    "director": "Alice Brown",
+    "duration": 120,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2025-02-04",
+    "category": "16+"
+  },
+  {
+    "id": 9,
+    "name": "Movie 9",
+    "genre": "Horror",
+    "director": "David White",
+    "duration": 76,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2018-04-01",
+    "category": "16+"
+  },
+  {
+    "id": 10,
+    "name": "Movie 10",
+    "genre": "Fantasy",
+    "director": "Michael Johnson",
+    "duration": 128,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2012-08-03",
+    "category": "16+"
+  },
+  {
+    "id": 11,
+    "name": "Movie 11",
+    "genre": "Action",
+    "director": "Michael Johnson",
+    "duration": 167,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2020-08-11",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 12,
+    "name": "Movie 12",
+    "genre": "Drama",
+    "director": "Emily Clark",
+    "duration": 115,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2010-01-17",
+    "category": "16+"
+  },
+  {
+    "id": 13,
+    "name": "Movie 13",
+    "genre": "Romance",
+    "director": "Alice Brown",
+    "duration": 67,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2005-05-28",
+    "category": "18+"
+  },
+  {
+    "id": 14,
+    "name": "Movie 14",
+    "genre": "Horror",
+    "director": "John Doe",
+    "duration": 105,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2015-11-29",
+    "category": "16+"
+  },
+  {
+    "id": 15,
+    "name": "Movie 15",
+    "genre": "Adventure",
+    "director": "Emily Clark",
+    "duration": 177,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2019-09-28",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 16,
+    "name": "Movie 16",
+    "genre": "Comedy",
+    "director": "Alice Brown",
+    "duration": 169,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2025-02-10",
+    "category": "16+"
+  },
+  {
+    "id": 17,
+    "name": "Movie 17",
+    "genre": "Romance",
+    "director": "John Doe",
+    "duration": 157,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2016-07-17",
+    "category": "16+"
+  },
+  {
+    "id": 18,
+    "name": "Movie 18",
+    "genre": "Adventure",
+    "director": "David White",
+    "duration": 112,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2016-04-22",
+    "category": "16+"
+  },
+  {
+    "id": 19,
+    "name": "Movie 19",
+    "genre": "Horror",
+    "director": "John Doe",
+    "duration": 112,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2018-07-10",
+    "category": "18+"
+  },
+  {
+    "id": 20,
+    "name": "Movie 20",
+    "genre": "Drama",
+    "director": "Jane Smith",
+    "duration": 123,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2005-09-18",
+    "category": "16+"
+  },
+  {
+    "id": 21,
+    "name": "Movie 21",
+    "genre": "Horror",
+    "director": "Michael Johnson",
+    "duration": 138,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2009-01-09",
+    "category": "18+"
+  },
+  {
+    "id": 22,
+    "name": "Movie 22",
+    "genre": "Fantasy",
+    "director": "David White",
+    "duration": 136,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2006-09-24",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 23,
+    "name": "Movie 23",
+    "genre": "Fantasy",
+    "director": "Alice Brown",
+    "duration": 179,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2024-08-17",
+    "category": "18+"
+  },
+  {
+    "id": 24,
+    "name": "Movie 24",
+    "genre": "Drama",
+    "director": "David White",
+    "duration": 162,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2017-04-05",
+    "category": "16+"
+  },
+  {
+    "id": 25,
+    "name": "Movie 25",
+    "genre": "Romance",
+    "director": "Jane Smith",
+    "duration": 116,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2017-08-22",
+    "category": "18+"
+  },
+  {
+    "id": 26,
+    "name": "Movie 26",
+    "genre": "Fantasy",
+    "director": "Jane Smith",
+    "duration": 84,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2022-08-26",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 27,
+    "name": "Movie 27",
+    "genre": "Horror",
+    "director": "Alice Brown",
+    "duration": 82,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2012-11-11",
+    "category": "16+"
+  },
+  {
+    "id": 28,
+    "name": "Movie 28",
+    "genre": "Comedy",
+    "director": "Alice Brown",
+    "duration": 136,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2019-11-12",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 29,
+    "name": "Movie 29",
+    "genre": "Action",
+    "director": "Jane Smith",
+    "duration": 137,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2012-05-30",
+    "category": "16+"
+  },
+  {
+    "id": 30,
+    "name": "Movie 30",
+    "genre": "Sci-Fi",
+    "director": "Emily Clark",
+    "duration": 109,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2020-08-06",
+    "category": "18+"
+  },
+  {
+    "id": 31,
+    "name": "Movie 31",
+    "genre": "Fantasy",
+    "director": "Michael Johnson",
+    "duration": 75,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2011-10-01",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 32,
+    "name": "Movie 32",
+    "genre": "Romance",
+    "director": "John Doe",
+    "duration": 86,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2016-08-16",
+    "category": "18+"
+  },
+  {
+    "id": 33,
+    "name": "Movie 33",
+    "genre": "Drama",
+    "director": "Alice Brown",
+    "duration": 134,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2019-12-21",
+    "category": "16+"
+  },
+  {
+    "id": 34,
+    "name": "Movie 34",
+    "genre": "Horror",
+    "director": "Jane Smith",
+    "duration": 138,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2022-11-22",
+    "category": "18+"
+  },
+  {
+    "id": 35,
+    "name": "Movie 35",
+    "genre": "Sci-Fi",
+    "director": "Alice Brown",
+    "duration": 83,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2015-12-25",
+    "category": "16+"
+  },
+  {
+    "id": 36,
+    "name": "Movie 36",
+    "genre": "Drama",
+    "director": "John Doe",
+    "duration": 99,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2024-02-07",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 37,
+    "name": "Movie 37",
+    "genre": "Sci-Fi",
+    "director": "David White",
+    "duration": 131,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2006-06-25",
+    "category": "16+"
+  },
+  {
+    "id": 38,
+    "name": "Movie 38",
+    "genre": "Comedy",
+    "director": "Alice Brown",
+    "duration": 73,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2012-12-02",
+    "category": "16+"
+  },
+  {
+    "id": 39,
+    "name": "Movie 39",
+    "genre": "Action",
+    "director": "Alice Brown",
+    "duration": 74,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2014-07-31",
+    "category": "16+"
+  },
+  {
+    "id": 40,
+    "name": "Movie 40",
+    "genre": "Sci-Fi",
+    "director": "Michael Johnson",
+    "duration": 110,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2016-09-22",
+    "category": "16+"
+  },
+  {
+    "id": 41,
+    "name": "Movie 41",
+    "genre": "Horror",
+    "director": "Emily Clark",
+    "duration": 92,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2021-11-06",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 42,
+    "name": "Movie 42",
+    "genre": "Sci-Fi",
+    "director": "Alice Brown",
+    "duration": 60,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2007-08-01",
+    "category": "18+"
+  },
+  {
+    "id": 43,
+    "name": "Movie 43",
+    "genre": "Fantasy",
+    "director": "David White",
+    "duration": 84,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2023-04-23",
+    "category": "16+"
+  },
+  {
+    "id": 44,
+    "name": "Movie 44",
+    "genre": "Drama",
+    "director": "John Doe",
+    "duration": 162,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2019-08-08",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 45,
+    "name": "Movie 45",
+    "genre": "Action",
+    "director": "John Doe",
+    "duration": 82,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2007-03-30",
+    "category": "16+"
+  },
+  {
+    "id": 46,
+    "name": "Movie 46",
+    "genre": "Sci-Fi",
+    "director": "Emily Clark",
+    "duration": 166,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2005-10-27",
+    "category": "16+"
+  },
+  {
+    "id": 47,
+    "name": "Movie 47",
+    "genre": "Comedy",
+    "director": "David White",
+    "duration": 97,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2008-01-22",
+    "category": "18+"
+  },
+  {
+    "id": 48,
+    "name": "Movie 48",
+    "genre": "Horror",
+    "director": "David White",
+    "duration": 70,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2019-02-28",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 49,
+    "name": "Movie 49",
+    "genre": "Drama",
+    "director": "Alice Brown",
+    "duration": 97,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2017-06-24",
+    "category": "18+"
+  },
+  {
+    "id": 50,
+    "name": "Movie 50",
+    "genre": "Drama",
+    "director": "David White",
+    "duration": 96,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2015-10-11",
+    "category": "16+"
+  },
+  {
+    "id": 51,
+    "name": "Movie 51",
+    "genre": "Drama",
+    "director": "Emily Clark",
+    "duration": 125,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2023-11-07",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 52,
+    "name": "Movie 52",
+    "genre": "Sci-Fi",
+    "director": "Michael Johnson",
+    "duration": 159,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2023-06-04",
+    "category": "16+"
+  },
+  {
+    "id": 53,
+    "name": "Movie 53",
+    "genre": "Comedy",
+    "director": "David White",
+    "duration": 148,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2019-09-22",
+    "category": "16+"
+  },
+  {
+    "id": 54,
+    "name": "Movie 54",
+    "genre": "Adventure",
+    "director": "David White",
+    "duration": 71,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2016-07-18",
+    "category": "16+"
+  },
+  {
+    "id": 55,
+    "name": "Movie 55",
+    "genre": "Action",
+    "director": "David White",
+    "duration": 123,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2023-09-03",
+    "category": "18+"
+  },
+  {
+    "id": 56,
+    "name": "Movie 56",
+    "genre": "Adventure",
+    "director": "John Doe",
+    "duration": 95,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2010-06-20",
+    "category": "18+"
+  },
+  {
+    "id": 57,
+    "name": "Movie 57",
+    "genre": "Comedy",
+    "director": "Emily Clark",
+    "duration": 78,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2010-02-20",
+    "category": "16+"
+  },
+  {
+    "id": 58,
+    "name": "Movie 58",
+    "genre": "Drama",
+    "director": "John Doe",
+    "duration": 158,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2014-03-09",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 59,
+    "name": "Movie 59",
+    "genre": "Sci-Fi",
+    "director": "Jane Smith",
+    "duration": 138,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2016-10-20",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 60,
+    "name": "Movie 60",
+    "genre": "Horror",
+    "director": "Emily Clark",
+    "duration": 86,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2010-04-07",
+    "category": "18+"
+  },
+  {
+    "id": 61,
+    "name": "Movie 61",
+    "genre": "Drama",
+    "director": "Michael Johnson",
+    "duration": 109,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2025-04-05",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 62,
+    "name": "Movie 62",
+    "genre": "Drama",
+    "director": "John Doe",
+    "duration": 69,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2012-01-28",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 63,
+    "name": "Movie 63",
+    "genre": "Action",
+    "director": "Alice Brown",
+    "duration": 119,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2024-10-31",
+    "category": "16+"
+  },
+  {
+    "id": 64,
+    "name": "Movie 64",
+    "genre": "Action",
+    "director": "John Doe",
+    "duration": 155,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2011-08-12",
+    "category": "18+"
+  },
+  {
+    "id": 65,
+    "name": "Movie 65",
+    "genre": "Sci-Fi",
+    "director": "Jane Smith",
+    "duration": 131,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2024-07-08",
+    "category": "18+"
+  },
+  {
+    "id": 66,
+    "name": "Movie 66",
+    "genre": "Romance",
+    "director": "Jane Smith",
+    "duration": 61,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2005-09-14",
+    "category": "18+"
+  },
+  {
+    "id": 67,
+    "name": "Movie 67",
+    "genre": "Action",
+    "director": "David White",
+    "duration": 171,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2013-02-19",
+    "category": "18+"
+  },
+  {
+    "id": 68,
+    "name": "Movie 68",
+    "genre": "Comedy",
+    "director": "Michael Johnson",
+    "duration": 66,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2016-04-12",
+    "category": "18+"
+  },
+  {
+    "id": 69,
+    "name": "Movie 69",
+    "genre": "Adventure",
+    "director": "David White",
+    "duration": 123,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2008-09-17",
+    "category": "16+"
+  },
+  {
+    "id": 70,
+    "name": "Movie 70",
+    "genre": "Adventure",
+    "director": "Alice Brown",
+    "duration": 99,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2010-08-08",
+    "category": "16+"
+  },
+  {
+    "id": 71,
+    "name": "Movie 71",
+    "genre": "Sci-Fi",
+    "director": "John Doe",
+    "duration": 113,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2015-09-22",
+    "category": "16+"
+  },
+  {
+    "id": 72,
+    "name": "Movie 72",
+    "genre": "Romance",
+    "director": "Alice Brown",
+    "duration": 123,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2018-01-08",
+    "category": "18+"
+  },
+  {
+    "id": 73,
+    "name": "Movie 73",
+    "genre": "Horror",
+    "director": "David White",
+    "duration": 60,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2006-11-11",
+    "category": "16+"
+  },
+  {
+    "id": 74,
+    "name": "Movie 74",
+    "genre": "Action",
+    "director": "David White",
+    "duration": 69,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2020-05-26",
+    "category": "18+"
+  },
+  {
+    "id": 75,
+    "name": "Movie 75",
+    "genre": "Adventure",
+    "director": "John Doe",
+    "duration": 112,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2009-03-20",
+    "category": "16+"
+  },
+  {
+    "id": 76,
+    "name": "Movie 76",
+    "genre": "Action",
+    "director": "Jane Smith",
+    "duration": 160,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2021-07-18",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 77,
+    "name": "Movie 77",
+    "genre": "Adventure",
+    "director": "Michael Johnson",
+    "duration": 146,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2017-07-14",
+    "category": "18+"
+  },
+  {
+    "id": 78,
+    "name": "Movie 78",
+    "genre": "Romance",
+    "director": "Emily Clark",
+    "duration": 70,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2024-07-07",
+    "category": "18+"
+  },
+  {
+    "id": 79,
+    "name": "Movie 79",
+    "genre": "Drama",
+    "director": "Jane Smith",
+    "duration": 119,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2017-04-04",
+    "category": "16+"
+  },
+  {
+    "id": 80,
+    "name": "Movie 80",
+    "genre": "Action",
+    "director": "Jane Smith",
+    "duration": 154,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2015-12-04",
+    "category": "16+"
+  },
+  {
+    "id": 81,
+    "name": "Movie 81",
+    "genre": "Sci-Fi",
+    "director": "Jane Smith",
+    "duration": 60,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2008-11-15",
+    "category": "18+"
+  },
+  {
+    "id": 82,
+    "name": "Movie 82",
+    "genre": "Comedy",
+    "director": "David White",
+    "duration": 161,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2012-10-26",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 83,
+    "name": "Movie 83",
+    "genre": "Adventure",
+    "director": "Emily Clark",
+    "duration": 139,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2023-10-25",
+    "category": "18+"
+  },
+  {
+    "id": 84,
+    "name": "Movie 84",
+    "genre": "Action",
+    "director": "Emily Clark",
+    "duration": 60,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2013-08-12",
+    "category": "18+"
+  },
+  {
+    "id": 85,
+    "name": "Movie 85",
+    "genre": "Comedy",
+    "director": "Emily Clark",
+    "duration": 148,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2011-06-05",
+    "category": "16+"
+  },
+  {
+    "id": 86,
+    "name": "Movie 86",
+    "genre": "Romance",
+    "director": "Alice Brown",
+    "duration": 122,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2011-11-23",
+    "category": "16+"
+  },
+  {
+    "id": 87,
+    "name": "Movie 87",
+    "genre": "Comedy",
+    "director": "Emily Clark",
+    "duration": 80,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2011-03-29",
+    "category": "16+"
+  },
+  {
+    "id": 88,
+    "name": "Movie 88",
+    "genre": "Adventure",
+    "director": "Emily Clark",
+    "duration": 71,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2011-01-21",
+    "category": "16+"
+  },
+  {
+    "id": 89,
+    "name": "Movie 89",
+    "genre": "Action",
+    "director": "Jane Smith",
+    "duration": 177,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2022-11-13",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 90,
+    "name": "Movie 90",
+    "genre": "Fantasy",
+    "director": "John Doe",
+    "duration": 171,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2005-11-20",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 91,
+    "name": "Movie 91",
+    "genre": "Sci-Fi",
+    "director": "David White",
+    "duration": 165,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2005-07-15",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 92,
+    "name": "Movie 92",
+    "genre": "Comedy",
+    "director": "Michael Johnson",
+    "duration": 116,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2008-03-06",
+    "category": "16+"
+  },
+  {
+    "id": 93,
+    "name": "Movie 93",
+    "genre": "Horror",
+    "director": "Michael Johnson",
+    "duration": 63,
+    "description": "An exploration of human nature and the will to survive.",
+    "publishedDate": "2005-12-22",
+    "category": "18+"
+  },
+  {
+    "id": 94,
+    "name": "Movie 94",
+    "genre": "Action",
+    "director": "Emily Clark",
+    "duration": 168,
+    "description": "An epic tale of adventure and courage.",
+    "publishedDate": "2013-12-21",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 95,
+    "name": "Movie 95",
+    "genre": "Adventure",
+    "director": "David White",
+    "duration": 127,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2018-04-22",
+    "category": "16+"
+  },
+  {
+    "id": 96,
+    "name": "Movie 96",
+    "genre": "Romance",
+    "director": "Michael Johnson",
+    "duration": 62,
+    "description": "A heartwarming story of love and redemption.",
+    "publishedDate": "2023-06-01",
+    "category": "16+"
+  },
+  {
+    "id": 97,
+    "name": "Movie 97",
+    "genre": "Drama",
+    "director": "David White",
+    "duration": 165,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2010-11-29",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 98,
+    "name": "Movie 98",
+    "genre": "Sci-Fi",
+    "director": "John Doe",
+    "duration": 132,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2006-01-11",
+    "category": "18+"
+  },
+  {
+    "id": 99,
+    "name": "Movie 99",
+    "genre": "Fantasy",
+    "director": "Alice Brown",
+    "duration": 148,
+    "description": "A gripping thriller that will keep you on the edge of your seat.",
+    "publishedDate": "2018-03-15",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 100,
+    "name": "Movie 100",
+    "genre": "Horror",
+    "director": "Emily Clark",
+    "duration": 66,
+    "description": "A whimsical journey through a world of magic and mystery.",
+    "publishedDate": "2015-12-21",
+    "category": "thiếu nhi"
+  },
+  {
+    "id": 101,
+    "name": "HereAcedami",
+    "genre": "Anime",
+    "director": "HiroshiAmi",
+    "duration": 150,
+    "description": "AllMight is the best hero in the world",
+    "publishedDate": "2022-06-05",
+    "category": "16+"
+  },
+  {
+    "id": 102,
+    "name": "Van co vay",
+    "genre": "Hinh su",
+    "director": "HwangWeeChan",
+    "duration": 100,
+    "description": "Dang cap",
+    "publishedDate": "2025-05-01",
+    "category": "18+"
+  },
+  {
+    "id": 103,
+    "name": "AAA",
+    "genre": "TR",
+    "director": "Tung",
+    "duration": 180,
+    "description": "VAi lua",
+    "publishedDate": "2022-05-08",
+    "category": "18+"
+  }
 ]
