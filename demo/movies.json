@@ -1013,20 +1013,10 @@
     "id": 102,
     "name": "Van co vay",
     "genre": "Hinh su",
-    "director": "HwangWeeChan",
+    "director": "Stephen Curry",
     "duration": 100,
-    "description": "Dang cap",
+    "description": "DAng cap vua nem 3 NBA",
     "publishedDate": "2025-05-01",
-    "category": "18+"
-  },
-  {
-    "id": 103,
-    "name": "AAA",
-    "genre": "TR",
-    "director": "Tung",
-    "duration": 180,
-    "description": "VAi lua",
-    "publishedDate": "2022-05-08",
-    "category": "18+"
+    "category": "!8+"
   }
 ]
