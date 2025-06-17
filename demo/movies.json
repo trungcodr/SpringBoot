@@ -1018,5 +1018,25 @@
     "description": "DAng cap vua nem 3 NBA",
     "publishedDate": "2025-05-01",
     "category": "!8+"
+  },
+  {
+    "id": 103,
+    "name": "Lich su cua tran chien Normandy",
+    "genre": "Gattuso ",
+    "director": "Lebron James",
+    "duration": 1500,
+    "description": "Dang cap the gioi",
+    "publishedDate": "2002-12-08",
+    "category": "Thieu nhi"
+  },
+  {
+    "id": 104,
+    "name": "Dep trai thi moi co nhieu dua yeu",
+    "genre": "Aniem",
+    "director": "Tung dep trai",
+    "duration": 120,
+    "description": "Tung dep trai dang yeu nhat the gioi",
+    "publishedDate": "2024-05-06",
+    "category": "16+"
   }
 ]
