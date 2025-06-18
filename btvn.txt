@@ -1,0 +1,30 @@
+B1: Tạo source code trên IDE hoặc từ https://start.spring.io/
+B2: Import các Dependency: spring web, spring jpa, postgresql
+B3: Cài database trên máy local và cấu hình user/pass (Tải bản cài, Dùng docker)
+https://www.postgresql.org/download/windows/
+B4: Mở source code trên IDE, để IDE import các thư viện cần thiết
+B5: Import JDK phù hợp
+B6: Tạo cấu trúc folder Theo three layer
+B7: Thêm cấu hình kết nối datasource đến CSDL
+B8: Tạo Entity, các trường cần thiết
+B9: Tạo Repository, Service, Controller
+B10: Tạo api mẫu (GET, POST, PUT, DELETE)
+B11: Kiểm thử bằng công cụ POSTMAN
+
+
+Bài tập về nhà:
+- Tôi có một database với 2 bảng: Class và Student (Hãy thêm các thuộc tính mà bạn thấy Class và Student cần có)
+- Biết rằng, mỗi student sẽ chỉ thuộc 1 lớp duy nhất và 1 lớp sẽ có nhiều student
+- Hãy viết cho tôi bộ API cho các công việc sau (Định dạng dữ liệu JSON)
++ Thêm mới lớp học
++ Thêm 1 học sinh vào lớp học
++ Thêm nhiều học sinh vào lớp học
++ Lấy ra 1 học sinh thông qua ID (Bao gồm thông tin lớp học của học sinh đó)
++ Lấy ra danh sách học sinh (Bao gồm thông tin lớp học của học sinh đó)
++ Lấy ra danh sách học sinh của 1 lớp học (Không bao gồm thông tin lớp của học sinh đó)
++ Chuyển 1 học sinh từ lớp này sang lớp kia
++ Xóa 1 lớp bất kì
+Nâng cao
++ Tìm kiếm lớp theo tên lớp
++ Tìm kiếm học sinh theo tên lớp
++ Tìm kiếm học sinh theo tên (Áp dụng thêm một số kỹ thuật search nâng cao hiện nay)
