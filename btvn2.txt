@@ -1,0 +1,59 @@
+- Output: Web server với bộ API tương ứng
+ 
+Thiết kế CSDL:
+- 2 bảng Class và Student:
+  + Tạo bảng trong database như thế nào: Từ code java hay từ sql
+- Bảng class cần những column nào: id, name, teacherName, address
+- Bảng student cần những column nào: id, name, age, gender
+- Thiết kế quan hệ bảng: 1-1, 1-n, n-n => 1-n
+- Bảng: student có thêm cột class_id => Khóa phụ
+ 
+Thiết source code:
+- Sử dựng thiết kế three layer: Tạo package: repository, service, controller
+- Làm việc với csdl: JDBC, ORM => ORM - JPA - SPRING DATA
+- Thêm thư viện ORM vào source code: Lên maven tìm dependency của ORM, thêm vào file pom.xml
+- Cấu hình kết nối đến csdl: Tìm hiểu về cách tạo kết nối thông qua file config của spring boot
+- Tạo Object để lưu dữ liệu từ csdl khi lấy lên trên java
+- Tạo clazz Classes và Student với các field tuongw ungws tren code java
+- Tạo truy vấn đến cơ sở dữ liệu, lấy dữ liệu ra, mapping với các class object vừa tạo ở trên
+ 
+Thiết kế API
+- Tạo các api tương ứng, xác định method, body, param nếu cần
++ Thêm mới lớp: POST, Truyền vào body, Object Classes
++ Thêm 1 học sinh vào lớp học: POST, Truyền vào body, Object Student có thêm thông tin lớp - trên params
++ Lấy ra 1 học sinh thông qua ID (thông tin lớp): GET, Truyền vào Param, studentId
+ 
+Thiết kế service
++ Thêm mới lớp:
+     - Nhận vào 1 object Classes
+     - Kiểm tra (validate đầu)
+     - Lưu vào csdl (Thông qua Repository) (Tìm hàm lưu mà ORM cung cấp)
++ Them moi 1 hoc sinh vao lop:
+     - Học sinh chưa tồn tại trong lớp (kiểm tra trùng).
+     - Lớp học phải tồn tại.
+     - Dữ liệu hợp lệ (validate đầu vào).
+     - Lưu vào database thành công.
+
++ Lấy ra học sinh thông qua ID (Thông tin lớp):
+     - Nhận vào ID của học sinh
+     - Lấy ra Object Student
+     - Lấy ra id của lớp trong object student
+     - Lấy ra Object Classes
+     - Trả về thông tin của học sinh + thông tin lớp (Hashmap, DTO, nâng cao Dùng entity luôn)
+ 
++ Xóa 1 lớp bằng ID (không cascade)
+     - Nhận vào ID của lớp
+     - Kiểm tra lớp có trong csdl hay không
+     - Nếu không thì => Ném exception Không tin thấy lớp
+     - Nếu có => Kiểm tra lớp học sinh hay không
+     - Nếu lớp không có học sinh => Cho phép xóa
+     - Nếu lớp có học sinh => Không cho xóa, thông báo cho client biết là không được xóa
+  + Xóa 1 lớp bằng ID (cascade)
+     - Nhận vào ID của lớp
+     - Kiểm tra lớp có trong csdl hay không
+     - Nếu không thì => Ném exception Không tin thấy lớp
+     - Nếu có => Xóa student Theo class id
+     - Xóa lớp
+ 
+Theo các bước tư duy như này, mọi người về làm lại bài cho anh nhé. Buổi sau sẽ chữa bài này tiếp, và học kỹ về spring jpa nhé
+ 
