@@ -25,7 +25,7 @@ public class ClassController {
 
     // Xoa lop khong cascade
 //    @DeleteMapping("/{classId}")
-//    public ResponseEntity<?> deleteClass(@PathVariable long classId) {
+//    public ResponseEntity<?> deleteClass(@PathVariable Long classId) {
 //        try {
 //            classService.deleteClassById(classId);
 //            return ResponseEntity.ok("Xoa lop thanh cong!");

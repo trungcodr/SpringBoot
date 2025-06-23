@@ -19,7 +19,7 @@ public class StudentService {
     private ClassRepository classRepository;
 
     //  Them 1 hoc sinh vao lop hoc
-    public Student createStudent(Student student, long classId) {
+    public Student createStudent(Student student, Long classId) {
 //        Kiem tra lop co ton tai hay khong
         boolean classExists = classRepository.existsById(classId);
         if(!classExists){
@@ -35,7 +35,7 @@ public class StudentService {
     }
 
     //    Them nhieu hoc sinh vao lop hoc
-    public List<Student> createMultiStudent(List<Student> students, long classId) {
+    public List<Student> createMultiStudent(List<Student> students, Long classId) {
 //        Kiem tra lop co ton tai hay khong
         if(!classRepository.existsById(classId)){
             throw new RuntimeException("Lop hoc khong ton tai!");
@@ -55,7 +55,7 @@ public class StudentService {
     }
 
     //    Lay ra hoc sinh thong qua id(bao gom thong tin lop hoc)
-    public StudentWithClassDTO getStudent(long studentId) {
+    public StudentWithClassDTO getStudent(Long studentId) {
         // Tim hoc sinh
         Student student = studentRepository.findById(studentId).orElse(null);
         if(student == null){
@@ -90,6 +90,7 @@ public class StudentService {
     public List<StudentWithClassDTO> getAllStudentsWithClass() {
         List<Student> students = studentRepository.findAll();
         List<StudentWithClassDTO> result = new ArrayList<>();
+
         for(Student student : students){
             StudentWithClassDTO studentWithClassDTO = new StudentWithClassDTO();
             studentWithClassDTO.setId(student.getId());
@@ -98,15 +99,17 @@ public class StudentService {
             studentWithClassDTO.setGender(student.getGender());
 
             // tim lop tuong ung voi classId
-            Classes classes = classRepository.findById(student.getClassId()).orElse(null);
-            if(classes != null){
-                StudentWithClassDTO.ClassDTO classDTO = new StudentWithClassDTO.ClassDTO();
-                classDTO.setId(classes.getId());
-                classDTO.setName(classes.getName());
-                classDTO.setTeacherName(classes.getTeacherName());
-                classDTO.setAddress(classes.getAddress());
+            if (student.getClassId() != null) {
+                Classes classes = classRepository.findById(student.getClassId()).orElse(null);
+                if(classes != null){
+                    StudentWithClassDTO.ClassDTO classDTO = new StudentWithClassDTO.ClassDTO();
+                    classDTO.setId(classes.getId());
+                    classDTO.setName(classes.getName());
+                    classDTO.setTeacherName(classes.getTeacherName());
+                    classDTO.setAddress(classes.getAddress());
 
-                studentWithClassDTO.setClassInfo(classDTO);
+                    studentWithClassDTO.setClassInfo(classDTO);
+                }
             }
             result.add(studentWithClassDTO);
         }
@@ -114,7 +117,7 @@ public class StudentService {
     }
 
     // Lay ra danh sach hoc sinh cua 1 lop hoc
-    public List<Student> getStudentsByClassId(long classId) {
+    public List<Student> getStudentsByClassId(Long classId) {
         //Kiem tra lop co ton tai hay khong
         if(!classRepository.existsById(classId)){
             throw new RuntimeException("Lop hoc khong ton tai!");
@@ -123,7 +126,7 @@ public class StudentService {
     }
 
     // Chuyen hoc sinh sang lop moi
-    public Student transferStudentToNewClass(long studentId, long newClassId) {
+    public Student transferStudentToNewClass(Long studentId, Long newClassId) {
         // Tim hoc sinh
         Student student = studentRepository.findById(studentId).orElse(null);
         if(student == null){

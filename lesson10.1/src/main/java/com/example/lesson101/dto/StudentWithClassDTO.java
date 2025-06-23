@@ -1,7 +1,7 @@
 package com.example.lesson101.dto;
 
 public class StudentWithClassDTO {
-    private long id;
+    private Long id;
     private String name;
     private int age;
     private String gender;
@@ -9,16 +9,16 @@ public class StudentWithClassDTO {
     private ClassDTO classInfo;
 
     public static class ClassDTO {
-        private long id;
+        private Long id;
         private String name;
         private String teacherName;
         private String address;
 
-        public long getId() {
+        public Long getId() {
             return id;
         }
 
-        public void setId(long id) {
+        public void setId(Long id) {
             this.id = id;
         }
 
@@ -47,11 +47,11 @@ public class StudentWithClassDTO {
         }
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

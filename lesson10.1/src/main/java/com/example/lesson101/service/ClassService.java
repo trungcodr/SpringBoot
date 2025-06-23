@@ -33,7 +33,7 @@ public class ClassService {
     }
 
     //xoa lop khong cascade
-//    public void deleteClassById(long classId) {
+//    public void deleteClassById(Long classId) {
 //        //kiem tra lop co ton tai khong
 //        boolean classExists = classRepository.existsById(classId);
 //        if (!classExists) {
@@ -49,7 +49,7 @@ public class ClassService {
 //    }
 
     // xoa lop cascade
-    public void deleteClassCascade(long clasId) {
+    public void deleteClassCascade(Long clasId) {
         //Kiem tra lop co ton tai khong
         boolean exists = classRepository.existsById(clasId);
         if (!exists) {

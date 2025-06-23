@@ -18,7 +18,7 @@ public class StudentController {
 
     // them 1 hoc sinh moi vao lop
     @PostMapping
-    public ResponseEntity<?> createStudent(@RequestBody Student student, @RequestParam long classId ) {
+    public ResponseEntity<?> createStudent(@RequestBody Student student, @RequestParam Long classId ) {
         try {
             Student save = studentService.createStudent(student, classId);
             return ResponseEntity.ok(save);
@@ -29,7 +29,7 @@ public class StudentController {
 
     // them nhieu hoc sinh moi vao 1 lop
     @PostMapping("/batch")
-    public ResponseEntity<?> createMultipleStudents(@RequestBody List<Student> students, @RequestParam long classId) {
+    public ResponseEntity<?> createMultipleStudents(@RequestBody List<Student> students, @RequestParam Long classId) {
         try {
             List<Student> saveStudents = studentService.createMultiStudent(students, classId);
             return ResponseEntity.ok(saveStudents);
@@ -40,7 +40,7 @@ public class StudentController {
 
     // lay hoc sinh thong qua id (bao gom thong tin lop)
     @GetMapping("/{id}")
-    public ResponseEntity<?> getStudentWithClass(@PathVariable long id) {
+    public ResponseEntity<?> getStudentWithClass(@PathVariable Long id) {
         try {
             StudentWithClassDTO studentWithClassDTO = studentService.getStudent(id);
             return ResponseEntity.ok(studentWithClassDTO);
@@ -58,7 +58,7 @@ public class StudentController {
 
     // Lay ra danh sach hoc sinh cua 1 lop khong bao gom thong tin lop
     @GetMapping("/by-class")
-    public ResponseEntity<?> getAllStudentsByClass(@RequestParam long classId) {
+    public ResponseEntity<?> getAllStudentsByClass(@RequestParam Long classId) {
         try {
             List<Student> students = studentService.getStudentsByClassId(classId);
             return ResponseEntity.ok(students);
@@ -69,7 +69,7 @@ public class StudentController {
 
     // Chuyen hoc sinh sang lop moi
     @PutMapping("/transfer")
-    public ResponseEntity<?> transferStudent(@RequestParam long studentId, @RequestParam long classId) {
+    public ResponseEntity<?> transferStudent(@RequestParam Long studentId, @RequestParam Long classId) {
         try {
             Student transfer = studentService.transferStudentToNewClass(studentId, classId);
             return ResponseEntity.ok(transfer);
