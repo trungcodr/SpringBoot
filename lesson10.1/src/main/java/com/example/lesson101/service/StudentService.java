@@ -13,10 +13,13 @@ import java.util.List;
 
 @Service
 public class StudentService {
-    @Autowired
-    private StudentRepository studentRepository;
-    @Autowired
-    private ClassRepository classRepository;
+    private final StudentRepository studentRepository;
+    private final ClassRepository classRepository;
+
+    public StudentService(StudentRepository studentRepository, ClassRepository classRepository) {
+        this.studentRepository = studentRepository;
+        this.classRepository = classRepository;
+    }
 
     //  Them 1 hoc sinh vao lop hoc
     public Student createStudent(Student student, Long classId) {

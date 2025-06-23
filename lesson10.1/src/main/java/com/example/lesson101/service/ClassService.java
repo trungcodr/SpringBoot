@@ -4,17 +4,20 @@ import com.example.lesson101.entity.Classes;
 import com.example.lesson101.entity.Student;
 import com.example.lesson101.repository.ClassRepository;
 import com.example.lesson101.repository.StudentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class ClassService {
-    @Autowired
-    private ClassRepository classRepository;
-    @Autowired
-    private StudentRepository studentRepository;
+    private final ClassRepository classRepository;
+    private final StudentRepository studentRepository;
+
+    public ClassService(ClassRepository classRepository, StudentRepository studentRepository) {
+        this.classRepository = classRepository;
+        this.studentRepository = studentRepository;
+    }
 
     //    Tao moi lop hoc
     public Classes createClass(Classes classes) {
