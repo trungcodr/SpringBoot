@@ -24,15 +24,15 @@ public class ClassController {
     }
 
     // Xoa lop khong cascade
-//    @DeleteMapping("/{classId}")
-//    public ResponseEntity<?> deleteClass(@PathVariable Long classId) {
-//        try {
-//            classService.deleteClassById(classId);
-//            return ResponseEntity.ok("Xoa lop thanh cong!");
-//        } catch (RuntimeException e) {
-//            return ResponseEntity.badRequest().body(e.getMessage());
-//        }
-//    }
+    @DeleteMapping("/{classId}")
+    public ResponseEntity<?> deleteClass(@PathVariable Long classId) {
+        try {
+            classService.deleteClassById(classId);
+            return ResponseEntity.ok("Xoa lop thanh cong!");
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 
     // xoa lop cascade
     @DeleteMapping("/cascade/{classId}")

@@ -1,14 +1,18 @@
 package com.example.lesson101.controller;
 
 
+import com.example.lesson101.dto.StudentSearchDTO;
 import com.example.lesson101.dto.StudentWithClassDTO;
 import com.example.lesson101.entity.Student;
 import com.example.lesson101.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+
+//@CrossOrigin(origins = "http://127.0.0.1:5500")
 
 @RestController
 @RequestMapping("/students")
@@ -76,5 +80,45 @@ public class StudentController {
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+    }
+
+    // Tim kiem hoc sinh theo ten lop
+    @GetMapping("/search-student")
+    public ResponseEntity<?> searchStudent(@RequestParam String className) {
+        try {
+            List<Student> students = studentService.findStudentByClassName(className);
+            return ResponseEntity.ok(students);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    // tim kiem hoc sinh theo ten hoc sinh
+    @GetMapping("/search")
+    public ResponseEntity<?> searchStudentByName(@RequestParam String studentName) {
+        try {
+            List<Student> students = studentService.findStudentByName(studentName);
+            return ResponseEntity.ok(students);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    // phan trang pagination - paging
+    @GetMapping("/paging")
+    public ResponseEntity<?> getStudentWithPaging(@RequestParam int page, @RequestParam int size) {
+        PageRequest pageRequest = PageRequest.of(page, size);
+        Page<Student> studentPage = studentService.getAllStudents(pageRequest);
+        return ResponseEntity.ok(studentPage);
+    }
+
+    @PostMapping("/search")
+    public ResponseEntity<?> search(@RequestBody StudentSearchDTO studentSearchDTO) {
+       try {
+           List<Student> result  = studentService.searchStudent(studentSearchDTO);
+           return ResponseEntity.ok(result);
+       } catch (RuntimeException e) {
+           return ResponseEntity.status(500).body(e.getMessage());
+       }
     }
 }

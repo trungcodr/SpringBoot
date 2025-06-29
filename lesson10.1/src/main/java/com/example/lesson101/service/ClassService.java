@@ -36,20 +36,20 @@ public class ClassService {
     }
 
     //xoa lop khong cascade
-//    public void deleteClassById(Long classId) {
-//        //kiem tra lop co ton tai khong
-//        boolean classExists = classRepository.existsById(classId);
-//        if (!classExists) {
-//            throw new RuntimeException("Khong tim thay lop hoc!");
-//        }
-//        // Kiem tra lop co hoc sinh khong
-//        int studentCount = studentRepository.countByClassId(classId);
-//        if (studentCount > 0) {
-//            throw new RuntimeException("Khong the xao lop vi co hoc sinh trong lop!");
-//        }
-//        //Xoa lop
-//        classRepository.deleteById(classId);
-//    }
+    public void deleteClassById(Long classId) {
+        //kiem tra lop co ton tai khong
+        boolean classExists = classRepository.existsById(classId);
+        if (!classExists) {
+            throw new RuntimeException("Khong tim thay lop hoc!");
+        }
+        // Kiem tra lop co hoc sinh khong
+        int studentCount = studentRepository.countByClassId(classId);
+        if (studentCount > 0) {
+            throw new RuntimeException("Khong the xao lop vi co hoc sinh trong lop!");
+        }
+        //Xoa lop
+        classRepository.deleteById(classId);
+    }
 
     // xoa lop cascade
     public void deleteClassCascade(Long clasId) {
@@ -61,14 +61,16 @@ public class ClassService {
         // lay danh sach hoc sinh trong lop
         List<Student> students = studentRepository.findByClassId(clasId);
         // neu co hoc sinh thi xoa het hoc sinh
-        if (students.isEmpty()) {
+        if (!students.isEmpty()) {
             studentRepository.deleteAll(students);
         }
         //xoa lop
         classRepository.deleteById(clasId);
     }
 
+    // Tim kiem lop theo ten lop
     public List<Classes> findClassesByName(String name) {
         return classRepository.findClassesByName(name);
     }
+
 }
