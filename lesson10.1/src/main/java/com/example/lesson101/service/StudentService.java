@@ -145,6 +145,7 @@ public class StudentService {
         return studentRepository.findAll(pageable);
     }
 
+    // Search nhieu truong
     public List<Student> searchStudent(StudentSearchDTO studentSearchDTO){
         List<Student> result = studentSearchRepository.search(studentSearchDTO);
         if (result == null || result.isEmpty()) {
