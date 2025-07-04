@@ -2,6 +2,7 @@ package com.example.Lesson13_.Clinic.Management.controller;
 
 import com.example.Lesson13_.Clinic.Management.dto.PatientRequestDTO;
 import com.example.Lesson13_.Clinic.Management.dto.PatientResponseDTO;
+import com.example.Lesson13_.Clinic.Management.dto.PatientSearchDTO;
 import com.example.Lesson13_.Clinic.Management.entity.Patient;
 import com.example.Lesson13_.Clinic.Management.service.PatientService;
 import org.springframework.http.ResponseEntity;
@@ -42,5 +43,11 @@ public class PatientController {
         PatientResponseDTO dto = patientService.updatePatient(id, requestDTO);
         return ResponseEntity.ok(dto);
 
+    }
+
+    @PostMapping("/search")
+    public ResponseEntity<List<PatientResponseDTO>> searchPatients(@RequestBody PatientSearchDTO searchDTO) {
+        List<PatientResponseDTO> results = patientService.searchPatient(searchDTO);
+        return ResponseEntity.ok(results);
     }
 }

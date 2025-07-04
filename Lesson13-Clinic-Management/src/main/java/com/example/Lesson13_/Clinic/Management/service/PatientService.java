@@ -2,9 +2,13 @@ package com.example.Lesson13_.Clinic.Management.service;
 
 import com.example.Lesson13_.Clinic.Management.dto.PatientRequestDTO;
 import com.example.Lesson13_.Clinic.Management.dto.PatientResponseDTO;
+import com.example.Lesson13_.Clinic.Management.dto.PatientSearchDTO;
 import com.example.Lesson13_.Clinic.Management.entity.Patient;
 import com.example.Lesson13_.Clinic.Management.mapper.PatientMapper;
 import com.example.Lesson13_.Clinic.Management.repository.PatientRepository;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.TypedQuery;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -50,5 +54,40 @@ public class PatientService {
         patientMapper.update(patient, requestDTO);
         Patient updated = patientRepository.save(patient);
         return patientMapper.toResponseDTO(updated);
+    }
+
+    //Tim kiem benh nhan theo nhieu truong
+    @PersistenceContext
+    private EntityManager entityManager;
+    public List<PatientResponseDTO> searchPatient(PatientSearchDTO dto) {
+        String sql = "select p from Patient p where 1=1";
+        if (dto.getName() != null && !dto.getName().isBlank()) {
+            sql += "and lower(p.name) like lower(concat('%', :name, '%'))";
+        }
+        if (dto.getAddress() != null && !dto.getAddress().isBlank()) {
+            sql += "and lower(p.address) like lower(concat('%', :address, '%'))";
+        }
+        if (dto.getPhone() != null && !dto.getPhone().isBlank()) {
+            sql += "and p.phone like concat('%', :phone, '%')";
+        }
+        if (dto.getGender() != null) {
+            sql += "and p.gender = :gender";
+        }
+
+        TypedQuery<Patient> query = entityManager.createQuery(sql, Patient.class);
+        if (dto.getName() != null && !dto.getName().isBlank()) {
+            query.setParameter("name",  dto.getName());
+        }
+        if (dto.getPhone() != null && !dto.getPhone().isBlank()) {
+            query.setParameter("phone", dto.getPhone());
+        }
+        if (dto.getGender() != null) {
+            query.setParameter("gender", dto.getGender());
+        }
+        if (dto.getAddress() != null && !dto.getAddress().isBlank()) {
+            query.setParameter("address", dto.getAddress());
+        }
+        List<Patient> patients = query.getResultList();
+        return patientMapper.toResponseDTOList(patients);
     }
 }
