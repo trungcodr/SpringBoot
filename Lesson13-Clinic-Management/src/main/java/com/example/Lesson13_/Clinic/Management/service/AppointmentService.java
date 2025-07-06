@@ -63,4 +63,12 @@ public class AppointmentService {
         }
         appointmentRepository.deleteById(id);
     }
+
+    public Long countAppointmentsThisMonth() {
+        return appointmentRepository.countAppointmentsInCurrentMonth();
+    }
+
+    public Double getAverageAppointmentPerDay() {
+        return appointmentRepository.getAverageAppointmentPerDay();
+    }
 }

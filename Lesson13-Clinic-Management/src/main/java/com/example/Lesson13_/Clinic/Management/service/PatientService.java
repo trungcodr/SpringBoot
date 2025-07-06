@@ -62,16 +62,16 @@ public class PatientService {
     public List<PatientResponseDTO> searchPatient(PatientSearchDTO dto) {
         String sql = "select p from Patient p where 1=1";
         if (dto.getName() != null && !dto.getName().isBlank()) {
-            sql += "and lower(p.name) like lower(concat('%', :name, '%'))";
+            sql += " and lower(p.name) like lower(concat('%', :name, '%'))";
         }
         if (dto.getAddress() != null && !dto.getAddress().isBlank()) {
-            sql += "and lower(p.address) like lower(concat('%', :address, '%'))";
+            sql += " and lower(p.address) like lower(concat('%', :address, '%'))";
         }
         if (dto.getPhone() != null && !dto.getPhone().isBlank()) {
-            sql += "and p.phone like concat('%', :phone, '%')";
+            sql += " and p.phone like concat('%', :phone, '%')";
         }
         if (dto.getGender() != null) {
-            sql += "and p.gender = :gender";
+            sql += " and p.gender = :gender";
         }
 
         TypedQuery<Patient> query = entityManager.createQuery(sql, Patient.class);

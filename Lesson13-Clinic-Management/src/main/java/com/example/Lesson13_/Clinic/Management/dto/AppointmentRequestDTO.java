@@ -1,5 +1,7 @@
 package com.example.Lesson13_.Clinic.Management.dto;
 
+import com.example.Lesson13_.Clinic.Management.enums.AppointmentStatus;
+
 import java.time.LocalDateTime;
 
 public class AppointmentRequestDTO {
@@ -7,7 +9,7 @@ public class AppointmentRequestDTO {
     private LocalDateTime time;
     private String reason;
     private String note;
-
+    private AppointmentStatus status;
     public Long getPatientId() {
         return patientId;
     }
@@ -38,5 +40,13 @@ public class AppointmentRequestDTO {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public AppointmentStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(AppointmentStatus status) {
+        this.status = status;
     }
 }

@@ -46,4 +46,14 @@ public class AppointmentController {
         appointmentService.deleteAppointment(id);
         return ResponseEntity.ok("Xoa lich hen thanh cong");
     }
+
+    @GetMapping("/count-this-month")
+    public ResponseEntity<Long> countAppointmentsThisMonth() {
+        return ResponseEntity.ok(appointmentService.countAppointmentsThisMonth());
+    }
+
+    @GetMapping("/average-per-day")
+    public ResponseEntity<Double> averageAppointmentPerDay() {
+        return ResponseEntity.ok(appointmentService.getAverageAppointmentPerDay());
+    }
 }

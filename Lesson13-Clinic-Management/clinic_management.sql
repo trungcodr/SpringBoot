@@ -18,12 +18,15 @@ create table appointment(
  reason varchar(255),
  note text
 );
+alter table appointment add column status varchar(20) not null default 'PENDING';
 
 create table doctor(
 	id bigint auto_increment primary key,
     name varchar(100) not null,
     position varchar(150)
 );
+insert into doctor(name,position) values ("Nguyen Dinh Thai","Co xuong khop");
+
 
 create table medical_record(
 	id bigint auto_increment primary key,
@@ -36,4 +39,6 @@ create table medical_record(
     note text
 )
 
+select * from patient;
 select * from appointment;
+select * from medical_record;

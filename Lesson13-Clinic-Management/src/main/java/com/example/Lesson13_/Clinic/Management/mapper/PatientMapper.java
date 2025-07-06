@@ -24,19 +24,6 @@ public class PatientMapper {
         return patient;
     }
 
-    public PatientRequestDTO toDTO(Patient patient) {
-        if (patient == null) {
-            return null;
-        }
-
-        PatientRequestDTO patientDTO = new PatientRequestDTO();
-        patientDTO.setName(patient.getName());
-        patientDTO.setGender(patient.getGender());
-        patientDTO.setDob(patient.getDob());
-        patientDTO.setPhone(patient.getPhone());
-        patientDTO.setAddress(patient.getAddress());
-        return patientDTO;
-    }
 
     public PatientResponseDTO toResponseDTO(Patient patient) {
         if (patient == null) {

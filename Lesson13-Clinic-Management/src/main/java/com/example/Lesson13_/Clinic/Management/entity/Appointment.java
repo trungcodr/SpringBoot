@@ -1,5 +1,6 @@
 package com.example.Lesson13_.Clinic.Management.entity;
 
+import com.example.Lesson13_.Clinic.Management.enums.AppointmentStatus;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -15,6 +16,9 @@ public class Appointment {
     private LocalDateTime time;
     private String reason;
     private String note;
+
+    @Enumerated(EnumType.STRING)
+    private AppointmentStatus status = AppointmentStatus.PENDING;
 
     public Long getId() {
         return id;
@@ -54,5 +58,13 @@ public class Appointment {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public AppointmentStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(AppointmentStatus status) {
+        this.status = status;
     }
 }
