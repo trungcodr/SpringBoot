@@ -17,6 +17,8 @@ public class Appointment {
     private String reason;
     private String note;
 
+    private Long doctorId;
+
     @Enumerated(EnumType.STRING)
     private AppointmentStatus status = AppointmentStatus.PENDING;
 
@@ -66,5 +68,13 @@ public class Appointment {
 
     public void setStatus(AppointmentStatus status) {
         this.status = status;
+    }
+
+    public Long getDoctorId() {
+        return doctorId;
+    }
+
+    public void setDoctorId(Long doctorId) {
+        this.doctorId = doctorId;
     }
 }

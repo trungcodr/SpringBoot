@@ -1,11 +1,14 @@
 package com.example.Lesson13_.Clinic.Management.controller;
 
 import com.example.Lesson13_.Clinic.Management.dto.AppointmentRequestDTO;
+import com.example.Lesson13_.Clinic.Management.dto.AppointmentResponseDTO;
 import com.example.Lesson13_.Clinic.Management.entity.Appointment;
 import com.example.Lesson13_.Clinic.Management.service.AppointmentService;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -18,9 +21,9 @@ public class AppointmentController {
     }
 
     @PostMapping
-    public ResponseEntity<Appointment> createAppointment(@RequestBody AppointmentRequestDTO requestDTO) {
-        Appointment appointment = appointmentService.createAppointment(requestDTO);
-        return ResponseEntity.ok(appointment);
+    public ResponseEntity<AppointmentResponseDTO> createAppointment(@RequestBody AppointmentRequestDTO requestDTO) {
+        AppointmentResponseDTO response = appointmentService.createAppointment(requestDTO);
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping
@@ -52,8 +55,31 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.countAppointmentsThisMonth());
     }
 
-    @GetMapping("/average-per-day")
-    public ResponseEntity<Double> averageAppointmentPerDay() {
-        return ResponseEntity.ok(appointmentService.getAverageAppointmentPerDay());
+    @GetMapping("/average-per-day/pending-between")
+    public ResponseEntity<Double> averageAppointmentPerDay(
+            @RequestParam("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime start,
+            @RequestParam("end") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime end
+    ) {
+        Double avg = appointmentService.getAverageAppointmentPerDay(start, end);
+        return ResponseEntity.ok(avg);
     }
+
+    @GetMapping("/average-per-day/done-between")
+    public ResponseEntity<Double> averageDoneAppointment(
+            @RequestParam("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime start,
+            @RequestParam("end") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime end
+    ) {
+        Double avg = appointmentService.getAverageDoneAppointment(start, end);
+        return ResponseEntity.ok(avg);
+    }
+
+    @GetMapping("/arrival-rate")
+    public ResponseEntity<Double> arrivalRate(
+            @RequestParam("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime start,
+            @RequestParam("end") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime end
+    ) {
+        Double rate  = appointmentService.getArrivalRateBetween(start, end);
+        return ResponseEntity.ok(rate);
+    }
+
 }

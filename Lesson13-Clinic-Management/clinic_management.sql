@@ -19,6 +19,7 @@ create table appointment(
  note text
 );
 alter table appointment add column status varchar(20) not null default 'PENDING';
+alter table appointment add column doctor_id bigint;
 
 create table doctor(
 	id bigint auto_increment primary key,
@@ -39,6 +40,7 @@ create table medical_record(
     note text
 )
 
+select * from doctor;
 select * from patient;
 select * from appointment;
 select * from medical_record;

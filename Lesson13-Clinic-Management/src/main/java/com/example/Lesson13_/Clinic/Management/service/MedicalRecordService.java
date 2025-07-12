@@ -12,6 +12,7 @@ import com.example.Lesson13_.Clinic.Management.repository.MedicalRecordRepositor
 import com.example.Lesson13_.Clinic.Management.repository.PatientRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -90,5 +91,9 @@ public class MedicalRecordService {
         medicalRecordMapper.update(record, dto);
         medicalRecordRepository.save(record);
         return medicalRecordMapper.toDTO(record);
+    }
+
+    public String getMostDiagnosis(LocalDateTime start, LocalDateTime end) {
+        return medicalRecordRepository.findMostDiagnosis(start, end);
     }
 }

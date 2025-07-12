@@ -26,6 +26,14 @@ public class PatientService {
         if (requestDTO.getName() == null || requestDTO.getName().isBlank()) {
             throw new IllegalArgumentException("Ten benh nhan khong duoc de trong!");
         }
+        if (requestDTO.getPhone() == null || requestDTO.getPhone().isBlank()) {
+            throw new IllegalArgumentException("So dien thoai khong duoc de trong!");
+        }
+
+        // Kiểm tra trùng số điện thoại
+        if (patientRepository.existsByPhone(requestDTO.getPhone())) {
+            throw new IllegalArgumentException("So dien thoai da ton tai trong he thong!");
+        }
         Patient patient = patientMapper.toEntity(requestDTO);
         return patientRepository.save(patient);
     }
