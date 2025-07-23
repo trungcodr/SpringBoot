@@ -4,12 +4,8 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.graphql.GraphQlProperties;
-import org.springframework.stereotype.Component;
-
 import java.io.IOException;
 
-//@Component
 public class JwtFilter implements Filter {
     private static final Logger logger = LoggerFactory.getLogger(JwtFilter.class);
     private final JwtUtil jwtUtil;
@@ -26,11 +22,17 @@ public class JwtFilter implements Filter {
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             String token = authHeader.substring(7);
-            String username = jwtUtil.extractUsername(token);
-            logger.info("[JwtFilter] Token hợp lệ - username: {}", username);
-            req.setAttribute("currentUser", username);
-        }
+            if (jwtUtil.validateToken(token)) {
+                String username = jwtUtil.extractUsername(token);
+                logger.info("[JwtFilter] Token hop le - username: {}", username);
+                req.setAttribute("currentUser", username);
+            } else {
+                logger.warn("[JwtFilter] Token khong hop le");
+                return;
+            }
 
+        }
         chain.doFilter(request, response);
     }
+
 }

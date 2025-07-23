@@ -15,7 +15,7 @@ public class SwaggerConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("JWT Login API")
-                        .version("1.0")
+                        .version("3.0")
                         .description("API dùng JWT để đăng nhập"))
                 .addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
                 .components(new io.swagger.v3.oas.models.Components()

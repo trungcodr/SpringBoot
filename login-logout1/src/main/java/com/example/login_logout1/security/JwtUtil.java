@@ -6,6 +6,9 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
 @Component
@@ -21,24 +24,30 @@ public class JwtUtil {
         return Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis()+ expirationMs))
-                .signWith(SignatureAlgorithm.HS256,secretKey)
+                .setExpiration(new Date(System.currentTimeMillis() + expirationMs))
+                .signWith(getSigningKey())
                 .compact();
     }
 
+
     public String extractUsername(String token) {
         return Jwts.parser()
-                .setSigningKey(secretKey)
+                .setSigningKey(getSigningKey())
                 .parseClaimsJws(token)
                 .getBody()
                 .getSubject();
     }
+
     public boolean validateToken(String token) {
         try {
-            Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
+            Jwts.parser().setSigningKey(getSigningKey()).parseClaimsJws(token);
             return true;
         } catch (JwtException e) {
-            return false;
+            throw new RuntimeException(e);
         }
     }
+    private SecretKey getSigningKey() {
+        return new SecretKeySpec(secretKey.getBytes(StandardCharsets.UTF_8), SignatureAlgorithm.HS256.getJcaName());
+    }
+
 }

@@ -3,7 +3,6 @@ package com.example.login_logout1.controller;
 import com.example.login_logout1.dto.LoginRequest;
 import com.example.login_logout1.dto.RegisterRequest;
 import com.example.login_logout1.dto.UserResponse;
-import com.example.login_logout1.entity.User;
 import com.example.login_logout1.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
@@ -41,10 +40,10 @@ public class AuthController {
         logger.info("[API] POST /auth/login - Payload: {}", request);
         try {
             String token = userService.login(request);
-            logger.info("[API] Đăng nhập thành công - token trả về");
+            logger.info("[API] Đang nhap thanh cong - token tra ve");
             return ResponseEntity.ok(token);
         } catch (RuntimeException e) {
-            logger.error("[API] Lỗi đăng nhập: {}", e.getMessage());
+            logger.error("[API] Loi dang nhap: {}", e.getMessage());
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
@@ -53,7 +52,7 @@ public class AuthController {
     public ResponseEntity<?> getCurrentUser(HttpServletRequest request) {
         String username = (String) request.getAttribute("currentUser");
         if (username == null) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Chưa đăng nhập");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Chua dang nhap");
         }
 
         UserResponse userInfo = userService.getUserInfo(username);

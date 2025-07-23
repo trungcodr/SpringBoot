@@ -16,8 +16,8 @@ public class FilterConfig {
     public FilterRegistrationBean<JwtFilter> jwtFilter(JwtFilter filter) {
         FilterRegistrationBean<JwtFilter> bean = new FilterRegistrationBean<>();
         bean.setFilter(filter);
-        bean.addUrlPatterns("/*"); // Áp dụng cho mọi endpoint
-        bean.setOrder(1); // Ưu tiên chạy sớm nếu có nhiều filter
+        bean.addUrlPatterns("/*");
+        bean.setOrder(1);
         return bean;
     }
 }

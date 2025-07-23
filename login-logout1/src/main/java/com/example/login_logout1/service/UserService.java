@@ -75,21 +75,15 @@ public class UserService {
         return token;
     }
 
-    //    public User getUserByUsername(String username) {
-//        if (username == null) throw new RuntimeException("Token khong chua username");
-//        User user = userRepository.findByUsername(username);
-//        if (user == null) throw new RuntimeException("Khong tim thay user");
-//        return user;
-//    }
     public UserResponse getUserInfo(String username) {
         log.info(">> getUserInfo() START - username: {}", username);
 
-        if (username == null) throw new RuntimeException("Token không chứa username");
+        if (username == null) throw new RuntimeException("Token khong chua username");
 
         User user = userRepository.findByUsername(username);
         if (user == null) {
-            log.warn("Không tìm thấy user với username: {}", username);
-            throw new RuntimeException("User không tồn tại");
+            log.warn("Khong tim thay user voi username: {}", username);
+            throw new RuntimeException("User khong ton tai");
         }
 
         // Lấy role
