@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Video Stream API</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { padding: 10px; margin: 5px 0; }
+        video { display: block; margin-top: 20px; max-width: 100%; height: auto; }
+        #message { color: red; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<h1>Test Video Stream API</h1>
+
+<label for="sourceId">Enter Source ID:</label>
+<input type="number" id="sourceId" placeholder="Enter sourceId" />
+
+<button id="loadVideo">Load Video</button>
+
+<div id="message"></div>
+
+<video id="videoPlayer" controls>
+    Your browser does not support the video tag.
+</video>
+
+<script>
+    const loadButton = document.getElementById('loadVideo');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const sourceInput = document.getElementById('sourceId');
+    const messageDiv = document.getElementById('message');
+
+    loadButton.addEventListener('click', async () => {
+        const sourceId = sourceInput.value.trim();
+
+        if (!sourceId) {
+            messageDiv.textContent = "⚠️ Please enter a sourceId";
+            return;
+        }
+
+        messageDiv.textContent = "⏳ Checking video...";
+        const videoUrl = `/api/stream/mp4/${sourceId}`;
+
+        try {
+            const res = await fetch(videoUrl, { method: 'HEAD' });
+
+            if (res.ok) {
+                videoPlayer.src = videoUrl;
+                await videoPlayer.load();
+                await videoPlayer.play();
+                messageDiv.textContent = "✅ Video loaded successfully";
+            } else {
+                messageDiv.textContent = `❌ Video with sourceId ${sourceId} not found.`;
+                videoPlayer.removeAttribute("src");
+                videoPlayer.load();
+            }
+        } catch (err) {
+            console.error("Fetch error:", err);
+            messageDiv.textContent = `🚨 Error loading video: ${err.message}`;
+            videoPlayer.removeAttribute("src");
+            videoPlayer.load();
+        }
+    });
+    // http://localhost:8080/index.html
+</script>
+</body>
+</html>
